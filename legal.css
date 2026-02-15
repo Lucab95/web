@@ -1,0 +1,88 @@
+:root {
+  --bg: #0f111a;
+  --surface: rgba(255, 255, 255, 0.06);
+  --surface-border: rgba(255, 255, 255, 0.14);
+  --text: #f3f4f9;
+  --muted: #c5c9d6;
+  --accent: #7c5cff;
+  --accent-2: #4c9eeb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: radial-gradient(circle at 10% -10%, rgba(124, 92, 255, 0.4), transparent 40%),
+    radial-gradient(circle at 100% 0%, rgba(76, 158, 235, 0.35), transparent 35%),
+    var(--bg);
+  color: var(--text);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 20px 72px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 24px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+h2 {
+  margin: 18px 0 10px;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+p,
+li {
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+a {
+  color: #c7b9ff;
+}
+
+small {
+  color: var(--muted);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid rgba(199, 185, 255, 0.4);
+  color: #e3dbff;
+  background: rgba(124, 92, 255, 0.18);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}
+
+.inline-list {
+  margin: 0;
+  padding-left: 16px;
+}
